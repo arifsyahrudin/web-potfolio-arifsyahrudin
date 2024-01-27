@@ -154,7 +154,7 @@ body {
   margin-top: 8px;
   font-size: 1.5rem;
   padding: 0.6rem 2rem;
-  border: 3PX solid #fd370f;
+  border: 3px solid #fd370f;
   background: none;
   color: #fd370f;
   border-radius: 10px;
@@ -168,54 +168,7 @@ body {
   border: 3px solid transparent;
   background-origin: border-box;
   border-radius: 10px;
-
 }
-
-/* .intro .aboutMe {
-  margin-top: 2rem;
-  border: 5em;
-  cursor: pointer;
-  outline: none;
-  font-size: 1.3rem;
-  -webkit-transform: translate(0);
-  transform: translate(0);
-  background-image: linear-gradient(45deg, #003cff, #ff4b4b);
-  padding: 0.7em 2em;
-  border-radius: 65px;
-  box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.438);
-  -webkit-transition: box-shadow 0.25s;
-  transition: box-shadow 0.25s;
-  color: white;
-}
-
-.aboutMe .text {
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(45deg, #003cff, #ff4b4b);
-}
-
-.aboutMe:after {
-  content: "";
-  border-radius: 18px;
-  position: absolute;
-  margin: 4px;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
-  background: transparent;
-}
-
-.aboutMe:hover {
-  background-image: linear-gradient(-45deg, #003cff, #ff4b4b);
-  box-shadow: 0 12px 24px rgba(128, 128, 128, 0.1);
-}
-
-.aboutMe:hover .text {
-  background-image: linear-gradient(-45deg, #003cff, #ff4b4b);
-} */
 
 .jumbotron .jumbotron-intro-image {
   flex: 1;
@@ -301,23 +254,26 @@ body {
 
 #about-decoration {
   position: absolute;
-  left: 0;
+  right: 0;
   top: 180%;
   z-index: -1;
   width: 150px;
+  transform: rotate(180deg);
 }
 
 .title h1 {
   font-family: "Spline Sans Mono", monospace;
   color: rgba(230, 230, 230, 0.12);
   font-size: 90px;
+  text-align: right;
 }
 
 #about .titles,
 #project .titles {
   color: #fff;
   font-size: 40px;
-  margin-top: -60px;
+  margin: -60px 15.4rem 0 0;
+  text-align: right;
 }
 
 .titles span {
@@ -329,30 +285,19 @@ body {
 }
 
 #about .about-pict {
-  flex-grow: 1;
-  order: 2;
-  margin-top: -7em;
+  flex-grow: 3;
+  margin: -7em auto 0 0;
 }
 
 .about-pict img {
-  width: 380px;
+  width: 680px;
 }
 
 #about .about-desc {
-  flex-grow: 2;
+  flex-grow: 1;
+  width: 400px;
   position: relative;
   top: 0;
-}
-
-.about-desc .about-desc-pict {
-  position: absolute;
-  top: -3.45em;
-  right: 10%;
-  transform: rotate(20deg);
-}
-
-#about-desc-pict {
-  width: 145px;
 }
 
 .about-desc-text {
@@ -375,17 +320,17 @@ body {
   width: 100%;
 }
 
+#skills h1,
+#contact h1 {
+  text-align: left;
+}
+
 #skills .titles,
 #contact .titles {
   color: #fff;
   font-size: 40px;
   margin-top: -60px;
   margin-right: 20rem;
-}
-
-.title.skills,
-.title.contact {
-  text-align: right;
 }
 
 #skills .skills-card-display {
@@ -402,8 +347,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  
-  
+  border-bottom-right-radius: 100px;
 }
 
 .first {
@@ -423,7 +367,6 @@ body {
   width: 100%;
 }
 
-
 .skill h4 {
   font-family: "Quicksand", sans-serif;
   font-weight: 600;
@@ -440,7 +383,7 @@ body {
   top: 0;
   display: block;
   left: -15px;
-  background: linear-gradient(to left top, #fd370f, #fd370f,  #f87e3c);
+  background: linear-gradient(to left top, #fd370f, #fd370f, #f87e3c);
 }
 
 .skill .card-skill-desc {
@@ -492,10 +435,12 @@ body {
   overflow: hidden;
   padding: 4rem 4rem;
   position: relative;
-  background: radial-gradient(circle at bottom, #212441, transparent ,#0f101c);
+  background: radial-gradient(circle at bottom, #212441, transparent, #0f101c);
 }
 
-
+#project .titles {
+  margin-right: 22.8rem;
+}
 
 #project .swiper {
   width: 100%;
@@ -643,7 +588,7 @@ body {
 
 /* contact */
 #contact {
-  background: radial-gradient(circle at top, #212441, transparent ,#0f101c)
+  background: radial-gradient(circle at top, #212441, transparent, #0f101c);
 }
 
 #contact .titles {
